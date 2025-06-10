@@ -82,10 +82,10 @@ Table of content:
   --border-default: solid 1px rgba(30, 30, 30, 1);
   --bg-color-even: #E8E8E8;
   --bg-color-odd: #F4F4F4;
-  --bg-dark-1: #111;
+  --bg-dark-1: #F4F4F4;
   --bg-dark-1-rgb: 17, 17, 17;
-  --bg-dark-2: #232627;
-  --bg-dark-3: #303030;
+  --bg-dark-2: #F4F4F4;
+  --bg-dark-3: #F4F4F4;
   --bg-grey: #F6F8F9;
   --bg-gradient-1: 0deg, rgba(var(--primary-color-rgb), .1) 0%, rgba(var(--secondary-color-rgb), .2) 100%;
   --swiper-theme-color: var(--secondary-color);
