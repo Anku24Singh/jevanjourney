@@ -262,7 +262,7 @@ header.header-bg {
 }
 
 header.transparent {
-  background: none;
+      background: #0000006e;
 }
 
 body:not(.side-layout) header:not(.smaller):not(.header-mobile).header-light.transparent {
