@@ -214,65 +214,28 @@
 					  </div>
 				 </div>
 			</section> 
-      </div> <!-- content close -->
-      <!-- footer begin -->
-        <footer class="footer-light" style="padding-left: 50px;padding-right: 50px;">
-            <div class="container relative z-1000">
-                <div class="row gx-5">
-                    <div class="col-lg-4 col-sm-6">
-                        <span class="italianno pl10">Jevan Journey</span>
-                        <div class="spacer-20"></div>
-                        <p>Our logo captures the real, everyday journey of being human. It brings together the simple yet powerful symbols of warmth, learning, freedom, and belonging. The heart at the centre symbolises compassion, reminding us that with support and reflection, we can move through life’s challenges and find our way towards balance and growth.</p>
-                        
-                    </div>
-                    <div class="col-lg-4 col-sm-12 order-lg-1 order-sm-2" >
-							  <div class="widget">
-									<h5>Our Services</h5>
-									<ul>
-										 <li><a href="index.html">Home</a></li>
-										 <li><a href="service-single.html">Services</a></li>
-										 <li><a href="contact.html">Get in Touch</a></li>
-										 <li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
-									</ul>
-							  </div>                            
-                    </div>
-                    <div class="col-lg-4 col-sm-6 order-lg-2 order-sm-1">
-                        <div class="widget">
-                            <div class="fw-bold text-dark"><i class="icofont-location-pin me-2 id-color"></i>Office Location</div>
-                            Gurgaon, Haryana
-
-                            <div class="spacer-20"></div>
-                            <div class="fw-bold text-dark"><i class="icofont-envelope me-2 id-color"></i>Send a Message</div>
-                            support@jevanjourney.com
-                            <div class="spacer-20"></div>
-                            <div class="social-icons mb-sm-30">
-                                <a href="https://www.linkedin.com/company/jevan-journey/"><i class="fa-brands fa-linkedin-in"></i></a>
-                                <a href="https://www.instagram.com/journey.jevan?igsh=MW9vOHdhM3Y3Yzk%3D&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                 <h5>Please note: We are not a suicide or crisis helpline. For free and confidential 24x7 support, you can contact MPower at 1800 120 820050 or the Vandrevala Foundation Helpline at +91 9999 666 555.</h5>
-            </div>
-            <div class="subfooter relative z-1000">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="de-flex">
-                                <div class="de-flex-col">
-                                    Copyright 2025 - Jevan Journey
-                                </div>                                
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            <!-- <img src="images/misc/flowers-crop-3.webp" class="w-20 absolute top-0 end-0 sw-anim" alt=""> -->
-             
-        </footer>
-        <!-- footer close -->     
+ <footer class="footer-light"></footer> 
+</div>  <!-- content close -->
+<script>
+	document.addEventListener('DOMContentLoaded',function(){
+		fetch('/jevanjourney/footer.html')
+			.then(response => {
+				// Check if the request was successful
+				if (!response.ok) {
+					throw new Error(`HTTP error! status: ${response.status}`);
+				}
+				// Extract the response body as text
+				return response.text(); 
+			})
+			.then(htmlContent => {
+				// Append the fetched HTML content to the target element
+				document.querySelector('footer').innerHTML = htmlContent; 
+			})
+			.catch(error => {
+				console.error('Error fetching or appending HTML:', error);
+			});
+		});
+	</script>        
     <!-- Javascript Files
     ================================================== -->
     <script src="js/plugins.js"></script>
